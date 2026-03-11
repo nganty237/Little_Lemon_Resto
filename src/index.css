@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #F4CE14;   /* Jaune Little Lemon */
+  --color-secondary: #495E57; /* Vert foncé Little Lemon */
+  --color-tertiary: #EDEFEE; /* Gris clair */
+  --color-dark: #333333; /* Gris sombre/texte */
+  --color-accent: #EE9972;    /* Saumon */
+}
+
+@theme {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-tertiary: var(--color-tertiary);
+  --color-dark: var(--color-dark);
+  --color-accent: var(--color-accent);
+}
