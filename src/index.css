@@ -1,14 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --color-primary: #F4CE14;   /* Jaune Little Lemon */
-  --color-secondary: #495E57; /* Vert foncé Little Lemon */
-  --color-tertiary: #EDEFEE; /* Gris clair */
-  --color-dark: #333333; /* Gris sombre/texte */
-  --color-accent: #EE9972;    /* Saumon */
+  --color-Charcoal:#2C2C2C;
+  --color-primary: #F4CE14;
+  --color-secondary: #5c8b7b;
+  --color-tertiary: #EDEFEE;
+  --color-dark: #333333;
+  --color-accent: #EE9972;
 }
 
 @theme {
+  --color-Charcoal: var(--color-Charcoal);
   --color-primary: var(--color-primary);
   --color-secondary: var(--color-secondary);
   --color-tertiary: var(--color-tertiary);
