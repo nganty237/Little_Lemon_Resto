@@ -15,12 +15,9 @@ function App() {
       <main className="min-h-screen">
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* Les routes about, menu, reservations redirigent vers Home avec l'ancre */}
           <Route path="/about" element={<Home />} />
           <Route path="/menu" element={<Home />} />
           <Route path="/reservations" element={<Reservation />} />
-          
-          {/* Les vraies pages séparées */}
           <Route path="/order" element={<Order />} />
           <Route path="/login" element={<Login />} />
         </Routes>

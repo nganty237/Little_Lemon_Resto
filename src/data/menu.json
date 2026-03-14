@@ -4,7 +4,7 @@
     "title": "Bruschetta",
     "price": 12.99,
     "description": "Our Bruschetta is made from grilled bread that has been rubbed with garlic and seasoned with salt and olive oil.",
-    "image": "./assets/bruchetta.svg",
+    "image": "/assets/bruchetta.svg",
     "available": true
   },
   {
@@ -12,7 +12,7 @@
     "title": "Greek Salad",
     "price": 9.99,
     "description": "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.",
-    "image": "./assets/greek salad.jpg",
+    "image": "/assets/greek salad.jpg",
     "available": true
   },
   {
@@ -20,7 +20,7 @@
     "title": "Lemon Dessert",
     "price": 15.00,
     "description": "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
-    "image": "./assets/lemon dessert.jpg",
+    "image": "/assets/lemon dessert.jpg",
     "available": true
   },
   {
@@ -28,7 +28,7 @@
     "title": "Pasta",
     "price": 18.50,
     "description": "Our delicious pasta is made from white flour, eggs, and water, tossed in a rich and savory mediterranean sauce.",
-    "image": "./assets/pasta.jpg",
+    "image": "/assets/pasta.jpg",
     "available": false
   },
   {
@@ -36,7 +36,8 @@
     "title": "Grilled Fish",
     "price": 25.00,
     "description": "Freshly caught and grilled to perfection, our fish is seasoned with a blend of Mediterranean herbs and freshly squeezed lemon.",
-    "image": "./assets/fish.jpg",
+    "image": "/assets/fish.jpg",
     "available": true
   }
-]
+]
+

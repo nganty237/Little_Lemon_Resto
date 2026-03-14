@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router';
 import { Calendar } from 'lucide-react';
+import { Button } from "@/components/ui/button"
 import { FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa';
-import PastaImg from '../../assets/pasta.jpg';
 import About from '../About';
 import Menu from '../Menu';
 
@@ -38,7 +38,7 @@ const Home = () => {
                     style={{ paddingTop: '80px' }}
                 >
                     <img
-                        src={PastaImg}
+                        src="/assets/pasta.jpg"
                         alt="Pasta background"
                         className="absolute inset-0 w-full h-full object-cover"
                     />
@@ -71,18 +71,15 @@ const Home = () => {
                                 We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
                             </p>
 
-                            <a
-                                href="#reservations"
-                                // onClick={e => {
-                                //     e.preventDefault();
-                                //     const el = document.getElementById('reservations');
-                                //     if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
-                                // }}
-                                className="inline-flex items-center gap-3 bg-primary text-secondary px-6 py-3 md:px-8 md:py-4 rounded-xl font-bold text-sm md:text-base shadow-lg hover:brightness-95 transition-all duration-300 transform hover:-translate-y-1 active:scale-95"
+                            <Button
+                                asChild
+                                className="inline-flex items-center gap-3 bg-primary text-secondary px-6 py-3 md:px-8 md:py-7 rounded-xl font-bold text-sm md:text-base shadow-lg hover:brightness-95 transition-all duration-300 transform hover:-translate-y-1 active:scale-95"
                             >
-                                <Calendar size={20} />
-                                Reserve a Table
-                            </a>
+                                <a href="#reservations">
+                                    <Calendar size={20} />
+                                    Reserve a Table
+                                </a>
+                            </Button>
                         </div>
                     </div>
                 </section>
@@ -95,7 +92,6 @@ const Home = () => {
             <div id="menu">
                 <Menu />
             </div>
-            <section className="bg-white py-16"></section>
         </main>
     );
 };

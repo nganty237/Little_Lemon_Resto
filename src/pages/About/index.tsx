@@ -1,8 +1,8 @@
-import restaurantImg from '../../assets/restaurant.jpg';
+
 
 const About = () => {
   return (
-    <section className="bg-tertiary py-10 md:py-20 w-full flex justify-center">
+    <section className="bg-white py-7 md:py-10 w-full flex justify-center">
       <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 
         <h2 className="text-secondary text-3xl md:text-4xl font-bold font-serif mb-4 md:mb-0">
@@ -23,13 +23,13 @@ const About = () => {
           <div className="flex-1 flex justify-center md:justify-end relative">
             <div className="w-full max-w-sm md:max-w-md lg:max-w-lg overflow-hidden">
               <img
-                src={restaurantImg}
+                src="/assets/restaurant.jpg"
                 alt="Little Lemon Restaurant interior"
                 className="w-full h-[320px] md:h-[420px] object-cover"
               />
             </div>
 
-            <div className="absolute -bottom-2 left-4 md:left-0 z-20 bg-primary text-secondary px-5 py-3 rounded-xl shadow-lg font-bold text-sm font-serif">
+            <div className="absolute -bottom-2 left-4 md:left-0 z-20 bg-Charcoal text-white px-5 py-3 rounded-xl shadow-lg font-bold text-sm font-serif">
               Open since July 2025
             </div>
           </div>

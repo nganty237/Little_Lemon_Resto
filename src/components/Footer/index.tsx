@@ -4,7 +4,6 @@ import {
     Home, Info, UtensilsCrossed, Calendar, ShoppingBag, LogIn
 } from "lucide-react"
 import { FaLinkedin, FaFacebook, FaTwitter } from "react-icons/fa"
-import Logo from "../../assets/Logo.svg"
 
 const Footer = () => {
     const navLinks = [
@@ -29,7 +28,7 @@ const Footer = () => {
 
                     <div className="flex justify-center md:justify-start md:ml-10">
                         <div className="bg-white p-2 rounded-xl inline-block shadow-lg transform hover:scale-105 transition-transform duration-300">
-                            <img src={Logo} alt="Little Lemon Logo" className="w-20 md:w-30 h-auto" />
+                            <img src="/assets/Logo.svg" alt="Little Lemon Logo" className="w-20 md:w-30 h-auto" />
                         </div>
                     </div>
 

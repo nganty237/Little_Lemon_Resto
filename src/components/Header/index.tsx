@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router"
 import { Menu, X, ShoppingCart } from 'lucide-react'
-import Logo from '../../assets/Logo.svg'
+import { Button } from "@/components/ui/button"
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -35,19 +35,21 @@ const Header = () => {
                 <div className="flex items-center justify-between relative w-full">
 
                     <div className="md:hidden flex items-center z-10">
-                        <button
-                            className={`${scrolled ? "text-secondary" : "text-white"} hover:bg-white/10 p-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary`} 
+                        <Button
+                            variant="ghost"
+                            size="icon"
+                            className={`${scrolled ? "text-secondary" : "text-white"} hover:bg-white/10 p-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary h-12 w-12`} 
                             onClick={handleMenuToggle}
                             aria-label="Toggle menu"
                             aria-expanded={isOpen}
                         >
                             {isOpen ? <X size={28} /> : <Menu size={28} />}
-                        </button>
+                        </Button>
                     </div>
 
                     <Link to="/" className="absolute left-1/2 transform -translate-x-1/2 md:static md:transform-none md:ml-48 lg:ml-25 flex items-center group z-10">
                         <img
-                            src={Logo}
+                            src="/assets/Logo.svg"
                             alt="Little Lemon Logo"
                             className={`h-10 md:h-14 w-auto object-contain group-hover:scale-105 transition-all duration-300 drop-shadow-lg ${!scrolled ? "brightness-0 invert" : ""}`} 
                         />
@@ -70,13 +72,19 @@ const Header = () => {
                     </nav>
 
                     <div className="md:hidden flex items-center z-10">
-                        <Link
-                            to="/order"
-                            className={`${scrolled ? "text-secondary" : "text-white"} hover:bg-white/10 p-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary`} 
-                            aria-label="Shopping Cart"
+                        <Button
+                            variant="ghost"
+                            size="icon"
+                            asChild
+                            className={`${scrolled ? "text-secondary" : "text-white"} hover:bg-white/10 p-2 rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-primary h-12 w-12`} 
                         >
-                            <ShoppingCart size={28} />
-                        </Link>
+                            <Link
+                                to="/order"
+                                aria-label="Shopping Cart"
+                            >
+                                <ShoppingCart size={28} />
+                            </Link>
+                        </Button>
                     </div>
                 </div>
             </div>
