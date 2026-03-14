@@ -5,7 +5,7 @@ const About = () => {
     <section className="bg-tertiary py-10 md:py-20 w-full flex justify-center">
       <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 
-        <h2 className="text-secondary text-3xl md:text-4xl font-bold font-serif mb-6 md:mb-1">
+        <h2 className="text-secondary text-3xl md:text-4xl font-bold font-serif mb-4 md:mb-0">
           Our History
         </h2>
         <div className="flex flex-col md:flex-row items-center gap-12 md:gap-16">

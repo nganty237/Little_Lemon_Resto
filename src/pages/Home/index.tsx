@@ -61,7 +61,6 @@ const Home = () => {
 
                     <div className="relative z-10 w-full flex justify-end pr-6 md:pr-16 lg:pr-28">
                         <div className="w-full max-w-lg pl-16 md:pl-0">
-                            <div className="w-12 h-1 bg-primary rounded-full mb-5" />
                             <h1 className="text-primary text-4xl sm:text-5xl md:text-7xl font-bold font-serif leading-tight mb-2">
                                 Little Lemon
                             </h1>
@@ -74,11 +73,11 @@ const Home = () => {
 
                             <a
                                 href="#reservations"
-                                onClick={e => {
-                                    e.preventDefault();
-                                    const el = document.getElementById('reservations');
-                                    if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
-                                }}
+                                // onClick={e => {
+                                //     e.preventDefault();
+                                //     const el = document.getElementById('reservations');
+                                //     if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' });
+                                // }}
                                 className="inline-flex items-center gap-3 bg-primary text-secondary px-6 py-3 md:px-8 md:py-4 rounded-xl font-bold text-sm md:text-base shadow-lg hover:brightness-95 transition-all duration-300 transform hover:-translate-y-1 active:scale-95"
                             >
                                 <Calendar size={20} />
